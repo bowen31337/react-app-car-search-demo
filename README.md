@@ -11,7 +11,7 @@ This project is an "eject" version of create-react-app,but added with more featu
 - Server Rendering
 
 ### Project Description
-The widget is about the car search. the link of demo is [https://ns-gjigbhyuxp.now.sh](https://ns-gjigbhyuxp.now.sh)
+The widget is about the car search.
 
 ### `yarn start`
 
