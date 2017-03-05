@@ -3,28 +3,28 @@ import axios from 'axios'
 import * as endpoint from '../constants/endpoints'
 
 
-export const fetchContents = () => {
+export const fetchCarMakes = () => {
 	const request = axios({
 		method: 'get',
-		url: endpoint.CONTENT_ENDPOINT,
+		url: endpoint.CAR_MAKES_ENDPOINT,
 		headers: []
 	})
 	return {
-		type:types.FETCH_CONTENTS,
+		type:types.FETCH_CAR_MAKES,
 		payload:request
 	}
 }
 
-export const fetchContentsSuccess = (data) => {
+export const fetchCarMakesSuccess = (data) => {
 	return {
-		type:types.FETCH_CONTENTS_SUCCESS,
+		type:types.FETCH_CAR_MAKES_SUCCESS,
 		payload:data
 	}
 }
 
-export const fetchContentsFailture = (error) => {
+export const fetchCarMakesFailture = (error) => {
 	return {
-		type:types.FETCH_CONTENTS_FAILURE,
+		type:types.FETCH_CAR_MAKES_FAILURE,
 		payload:error
 	}
 }

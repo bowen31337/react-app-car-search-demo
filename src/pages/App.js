@@ -1,13 +1,12 @@
 import React from 'react'
 import AppContainer from '../containers/AppContainer'
-import WidgetContainer from '../containers/WidgetContainer'
+import CarOfTheWeek from '../containers/CarOfTheWeekContainer'
+
 import '../assets/css/custom.css'
 
 const App = props => {
 	return (
-		<AppContainer {...props}>
-			<WidgetContainer />
-		</AppContainer>
+		<AppContainer {...props} />
 		)
 }
 

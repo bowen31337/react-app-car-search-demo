@@ -6,23 +6,23 @@ const INIT_STATE = {
 		payload:[]
 }
 
-const fetchContentReducer = (state = INIT_STATE, action) => {
+const fetchCarMakeModelReducer = (state = INIT_STATE, action) => {
 	const { type } = action
 
 	switch(type) {
-		case types.FETCH_CONTENTS:
+		case types.FETCH_CAR_MAKE_MODEL:
 			return {
 					...INIT_STATE,
 					loading:true
 
 			}
-		case types.FETCH_CONTENTS_SUCCESS:
+		case types.FETCH_CAR_MAKE_MODEL_SUCCESS:
 			return {
 					...INIT_STATE,
 					loading:false,
 					payload:action.payload
 			}
-		case types.FETCH_CONTENTS_FAILURE:
+		case types.FETCH_CAR_MAKE_MODEL_FAILURE:
 			return {
 					...INIT_STATE,
 					error:action.payload,
@@ -34,4 +34,4 @@ const fetchContentReducer = (state = INIT_STATE, action) => {
 
 }
 
-export default fetchContentReducer
+export default fetchCarMakeModelReducer

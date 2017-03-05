@@ -1,10 +1,13 @@
 import React from 'react'
 
 const App = props => {
-  const {pageName,children } = props
+  const { header, main,pageName  } = props
+
+ 
   return (
     <div className="widget" data-page={pageName} >
-      {children}
+  	   {header}
+       {main}
     </div>
   )
 
